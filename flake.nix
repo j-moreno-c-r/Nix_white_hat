@@ -1,12 +1,12 @@
 {
-  description = "A very basic flake";
+  description = "A very basic white hat flake";
 
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs?ref=nixos-unstable";
   };
 
   outputs = { self, nixpkgs, ...} @ inputs: {
-    nixosConfigurations.joaozinho = nixpkgs.lib.nixosSystem {
+    nixosConfigurations."USER" = nixpkgs.lib.nixosSystem {
       specialArgs = { inherit inputs; };
       system = "x86_64-linux";
     };
