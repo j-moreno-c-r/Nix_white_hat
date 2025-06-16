@@ -21,10 +21,10 @@
         hashcat
         thc-hydra
         nmap
-        wpscan
+        #wpscan
         aircrack-ng
         metasploit
-        maltego
+        #maltego
         audiness
         apk-tools
         snort
